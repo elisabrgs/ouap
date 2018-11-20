@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import "./Home.css";
 import { Grid, Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
+import SearchBar from "./SearchBar";
 
 const styles = theme => ({
   header: {
@@ -40,7 +41,9 @@ class Home extends Component {
             alignItems="center"
             spacing={16}
           >
-            <Grid item xs={8} md={5} />
+            <Grid item xs={8} md={5}>
+              <SearchBar />
+            </Grid>
           </Grid>
         </div>
       </div>
